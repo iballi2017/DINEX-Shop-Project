@@ -23,20 +23,25 @@ body {
 .main-nav {
   display: grid;
   padding: 1em;
-  grid-template-areas: 'brand-logo brand-logo nav-icons' 'menu-btn menu-btn menu-btn' 'nav-tab nav-tab nav-tab';
+  /* grid-template-areas: 'brand-logo brand-logo nav-icons' 'menu-btn menu-btn menu-btn' 'nav-tab nav-tab nav-tab'; */
+  grid-template-areas: 'brand-logo brand-logo menu-btn' 'nav-icons nav-icons nav-icons' 'nav-tab nav-tab nav-tab';
 }
 
 .main-nav .brand-logo {
   grid-area: brand-logo;
+  margin: 0;
 }
 
 .main-nav .menu-btn {
   grid-area: menu-btn;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .main-nav .icons {
   display: flex;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   align-items: center;
   grid-area: nav-icons;
   padding: 0;
@@ -55,14 +60,16 @@ body {
 
 .main-nav .nav-link {
   text-decoration: none;
-  color: var(--clr-shade)
+  color: var(--clr-shade);
 }
 
-.main-nav .icon-link{
-  color: var(--clr-shade)}
+.main-nav .icon-link {
+  color: var(--clr-shade);
+}
 
 .main-nav .nav-icon-list {
   list-style: none;
+  margin-right: 1.3em;
 }
 
 .hero {
@@ -172,14 +179,13 @@ body {
     width: 80%;
     margin: 0 auto;
   }
-
-  .main-nav .nav-tab {
-    /* grid-area: nav-tab;
-    padding: 0; */
-    display: block;
+  .main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
-  .menu-btn {
+  .main-nav .menu-btn {
     display: none;
   }
 
@@ -190,32 +196,39 @@ body {
 
     display: flex;
     /* background-color: grey; */
-    justify-content: space-between;
+    /* justify-content: space-between; */
   }
 
-  .main-nav .brand-logo{
+  .main-nav .brand-logo {
     order: 2;
-    flex-basis: 50%;
+    flex-basis: 40%;
     text-align: center;
   }
 
-  .main-nav .nav-tab{
+  .main-nav .nav-tab {
     order: 1;
     flex-basis: 30%;
   }
 
-  .main-nav .icons{
+  .main-nav .icons {
     order: 3;
-    flex-basis: 20%;
+    flex-basis: 30%;
+    /* background-color: grey; */
+    display: flex;
+    justify-content: flex-end;
   }
-
 
   .main-nav .nav-tab {
     display: flex;
     /* background-color: grey; */
-    justify-content: space-between;
+    /* justify-content: space-between; */
+  }
+
+  .main-nav .nav-tab .nav-list {
+    margin-right: 1.4em;
   }
   .hero-inner {
     justify-content: flex-start;
     width: 80%;
+  }
 }
