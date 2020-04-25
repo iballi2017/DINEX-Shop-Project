@@ -1,0 +1,217 @@
+/* variables */
+
+:root {
+  --clr-shade: #151515;
+  --clr-tone: #858585;
+  --clr-tint: #dddcdc;
+  --clr-tint2: #f1f1f1;
+  --clr-white: #ffffff;
+  --clr-action: rgb(177, 121, 17);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: var(--clr-white);
+}
+
+.main-nav {
+  display: grid;
+  padding: 1em;
+  grid-template-areas: 'brand-logo brand-logo nav-icons' 'menu-btn menu-btn menu-btn' 'nav-tab nav-tab nav-tab';
+}
+
+.main-nav .brand-logo {
+  grid-area: brand-logo;
+}
+
+.main-nav .menu-btn {
+  grid-area: menu-btn;
+}
+
+.main-nav .icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  grid-area: nav-icons;
+  padding: 0;
+}
+
+.main-nav .nav-tab {
+  grid-area: nav-tab;
+  padding: 0;
+  display: none;
+}
+
+.main-nav .nav-list {
+  list-style: none;
+  line-height: 2;
+}
+
+.main-nav .nav-link {
+  text-decoration: none;
+}
+
+.main-nav .nav-icon-list {
+  list-style: none;
+}
+
+.hero {
+  height: 90vh;
+  padding: 0 2em;
+  background-color: var(--clr-shade);
+  background-image: url('../images/freestocks-_3Q3tsJ01nc-unsplash.jpg');
+  background-blend-mode: soft-light;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position-x: left;
+
+  color: var(--clr-tint2);
+}
+
+.hero-inner > div > * {
+  margin: 0;
+}
+
+.hero-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.hero .hero-title {
+  font-size: 3rem;
+}
+
+.hero .call-to-action {
+  background: var(--clr-action);
+  color: var(--clr-white);
+  padding: 1em;
+  font-size: 0.9rem;
+  text-decoration: none;
+  border-radius: 3px;
+  margin-top: 1em;
+  display: block;
+  width: 200px;
+  text-align: center;
+}
+
+.advert {
+  padding: 1em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+.advert .card {
+  background: var(--clr-tint2);
+  padding: 2em;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.advert .card h3 {
+  font-weight: bolder;
+}
+
+.advert .card a {
+  text-decoration: none;
+  color: var(--clr-shade);
+}
+
+.advert .card a:hover {
+  color: var(--clr-action);
+}
+
+.advert .advert-one,
+.advert .advert-two,
+.advert .advert-three {
+  background-image: url('../images/model-1.png');
+}
+
+.products-category-list .product-items-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 20px;
+}
+
+.products-category-list {
+  padding: 1em;
+}
+
+.products-category-list .product-card .img-wrapper {
+  background-color: var(--clr-tint2);
+  text-align: center;
+  padding: 1em 0em;
+  margin-bottom: 0.4em;
+}
+
+.products-category-list p {
+  margin: 0.5em 0;
+}
+
+@media (min-width: 900px) {
+  body {
+    /* background: greenyellow; */
+  }
+
+  .wrapper {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .main-nav .nav-tab {
+    /* grid-area: nav-tab;
+    padding: 0; */
+    display: block;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+
+  .main-nav {
+    /* display: grid;
+    padding: 1em;
+    grid-template-areas: 'nav-tab brand-logo nav-icons'; */
+
+    display: flex;
+    /* background-color: grey; */
+    justify-content: space-between;
+  }
+
+  .main-nav .brand-logo{
+    order: 2;
+    flex-basis: 50%;
+    text-align: center;
+  }
+
+  .main-nav .nav-tab{
+    order: 1;
+    flex-basis: 30%;
+  }
+
+  .main-nav .icons{
+    order: 3;
+    flex-basis: 20%;
+  }
+
+
+  .main-nav .nav-tab {
+    display: flex;
+    /* background-color: grey; */
+    justify-content: space-between;
+  }
+  .hero-inner {
+    justify-content: flex-start;
+    width: 80%;
+}
