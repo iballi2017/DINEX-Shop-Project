@@ -55,7 +55,11 @@ body {
 
 .main-nav .nav-link {
   text-decoration: none;
+  color: var(--clr-shade)
 }
+
+.main-nav .icon-link{
+  color: var(--clr-shade)}
 
 .main-nav .nav-icon-list {
   list-style: none;
