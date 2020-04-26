@@ -388,6 +388,8 @@ body {
     display: flex;
     justify-content: space-between;
     border-top: 1px solid var(--clr-tone);
+    padding-top: 1.5em;
+    margin-top: 1.5em;
   }
 
   .footer-inner .social-icons,
