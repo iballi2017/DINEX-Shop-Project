@@ -20,5 +20,17 @@ $(document).ready(() => {
         }
     })
 
+    // $(".newsletter-form-input").on("focus", () => {
+    //     $(".form-grp").css({ "border-bottom": "4px solid red", "transition": "border-bottom 250ms ease-in-out" });
+    // })
+    $(".newsletter-form-input").focus(() => {
+        console.log("hello")
+        $(".form-grp").css({ "border-bottom": "4px solid #858585", "transition": "border-bottom 250ms ease-in-out" });
+    })
+    $(".newsletter-form-input").focusout(() => {
+        console.log("hello")
+        $(".form-grp").css({ "border-bottom": "1px solid #858585", "transition": "border-bottom 250ms ease-in-out" });
+    })
+
 
 })

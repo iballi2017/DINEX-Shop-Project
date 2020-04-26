@@ -13,11 +13,25 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: var(--clr-action);
+}
+a:focus {
+  outline: 0;
+  text-decoration: underline;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: var(--clr-white);
+  color: var(--clr-shade);
 }
 
 .main-nav {
@@ -143,6 +157,11 @@ body {
   color: var(--clr-action);
 }
 
+.advert .card a:focus {
+  outline: 0;
+  text-decoration: underline;
+}
+
 .advert .advert-one,
 .advert .advert-two,
 .advert .advert-three {
@@ -168,6 +187,134 @@ body {
 
 .products-category-list p {
   margin: 0.5em 0;
+}
+
+.product-ad {
+  background: cyan;
+  display: flex;
+}
+
+.product-ad .column-1,
+.product-ad .column-2 {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3em 0;
+  color: var(--clr-white);
+  font-weight: 600;
+  background-position-y: center;
+  background-position-x: center;
+}
+
+.product-ad h1 {
+  margin: 0;
+}
+
+.product-ad a {
+  text-decoration: none;
+  color: var(--clr-action);
+  /* text-shadow: 2px 2px 2px var(--clr-tint2); */
+  text-shadow: 1px 1px 2px var(--clr-tint2);
+}
+
+.product-ad a:hover {
+  text-decoration: none;
+  color: var(--clr-action);
+  /* text-shadow: 2px 2px 2px var(--clr-tint2); */
+  text-shadow: 1px 1px 2px var(--clr-tint2);
+}
+
+.product-ad a:focus {
+  outline: 0;
+  text-decoration: underline;
+}
+
+.column-1 {
+  /* background: #524d4d; */
+  background: rgb(189, 160, 160);
+  background-image: url('../images/freestocks-_3Q3tsJ01nc-unsplash.jpg');
+  background-blend-mode: soft-light;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.column-2 {
+  background: #524d4d;
+  background-image: url('../images/model-1.png');
+  background-blend-mode: soft-light;
+  background-repeat: no-repeat;
+}
+/* .column-2 > div {
+  background: red;
+  height: 30%;
+} */
+.column-1 p,
+.column-2 p {
+  margin: 0;
+}
+
+.contact-us {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 1em;
+  line-height: 2;
+}
+
+.contact-us .content ul {
+  padding: 0;
+}
+
+.contact-us .content li {
+  list-style: none;
+}
+
+.contact-us .customer-service-and-company-address-column li,
+.contact-us .our-newsletter-column li {
+  font-size: 0.9rem;
+}
+
+.our-newsletter-column .newsletter-form .form-grp {
+  border-bottom: 1px solid var(--clr-tone);
+  transition: border-bottom 250ms ease-in-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.5em;
+}
+
+.our-newsletter-column input {
+  width: 100%;
+}
+
+.our-newsletter-column input:focus,
+.our-newsletter-column button:focus {
+  outline: 0;
+}
+
+.our-newsletter-column button:hover,
+.our-newsletter-column button:focus {
+  color: var(--clr-action);
+}
+
+.our-newsletter-column input,
+.our-newsletter-column button {
+  border: none;
+}
+
+.our-newsletter-column button {
+  background: none;
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  .customer-service-and-company-address-column,
+  .our-newsletter-column {
+    flex-basis: 50%;
+  }
 }
 
 @media (min-width: 900px) {
@@ -230,5 +377,10 @@ body {
   .hero-inner {
     justify-content: flex-start;
     width: 80%;
+  }
+
+  .customer-service-and-company-address-column {
+    display: flex;
+    justify-content: space-evenly;
   }
 }
