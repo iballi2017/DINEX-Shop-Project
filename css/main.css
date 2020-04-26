@@ -387,6 +387,7 @@ body {
   .footer-inner {
     display: flex;
     justify-content: space-between;
+    border-top: 1px solid var(--clr-tone);
   }
 
   .footer-inner .social-icons,
