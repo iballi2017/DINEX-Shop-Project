@@ -383,4 +383,25 @@ body {
     display: flex;
     justify-content: space-evenly;
   }
+
+  .footer-inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-inner .social-icons,
+  .footer-inner .hot-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer-inner .social-icons li {
+    margin-left: 1em;
+  }
+
+  .footer-inner .hot-links li {
+    margin-right: 1em;
+    font-size: 0.9rem;
+  }
 }
