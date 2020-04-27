@@ -58,16 +58,16 @@ $(document).ready(() => {
     })
 
 
-    $(".fa-star").mouseover(function () {
-        // $(this).removeClass("far").addClass("fas")
-        console.log($(this).siblings())
-        let x = $(this).siblings()
-        console.log(x)
-        for (i = 0; i < x.length; i++) {
-            console.log(x[3])
-            if (this === x[i]) {
-                console.log("yes")
-            }
-        }
-    })
+    // $(".fa-star").mouseover(function () {
+    //     // $(this).removeClass("far").addClass("fas")
+    //     console.log($(this).siblings())
+    //     let x = $(this).siblings()
+    //     console.log(x)
+    //     for (i = 0; i < x.length; i++) {
+    //         console.log(x[3])
+    //         if (this === x[i]) {
+    //             console.log("yes")
+    //         }
+    //     }
+    // })
 })
