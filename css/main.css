@@ -29,6 +29,12 @@ a:focus {
   text-decoration: underline;
 }
 
+.item-stars {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
 .far.fa-star,
 .fas.fa-star {
   color: var(--clr-action);

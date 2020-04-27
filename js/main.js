@@ -1,19 +1,19 @@
 $(document).ready(() => {
     // alert("Hello world")
-    x = 0
+    x = true
     $(".menu-btn").on('click', () => {
         // $(".nav-tab").toggle(1000)
-        if (x == 0) {
+        if (x == true) {
             $(".nav-tab").show(1000);
-            x = 1
-            console.log("x = 1");
+            x = false
+            console.log("x = false");
             $(".fa-ellipsis-v").css({ "transform": "rotate(90deg)", "transition": "transform 250ms" })
             $(".menu-btn").css({ "color": "#858585" })
         }
 
-        else if (x == 1) {
+        else if (x == false) {
             $(".nav-tab").hide(1000);
-            x = 0;
+            x = true;
             $(".fa-ellipsis-v").css({ "transform": "rotate(0deg)", "transition": "transform 250ms" })
 
             $(".menu-btn").css({ "color": "#151515" })
@@ -24,11 +24,9 @@ $(document).ready(() => {
     //     $(".form-grp").css({ "border-bottom": "4px solid red", "transition": "border-bottom 250ms ease-in-out" });
     // })
     $(".newsletter-form-input").focus(function () {
-        console.log("hello")
         $(".form-grp").css({ "border-bottom": "4px solid #858585", "transition": "border-bottom 250ms ease-in-out" });
     })
     $(".newsletter-form-input").focusout(function () {
-        console.log("hello")
         $(".form-grp").css({ "border-bottom": "1px solid #858585", "transition": "border-bottom 250ms ease-in-out" });
     })
 
@@ -58,16 +56,27 @@ $(document).ready(() => {
     })
 
 
-    // $(".fa-star").mouseover(function () {
-    //     // $(this).removeClass("far").addClass("fas")
-    //     console.log($(this).siblings())
-    //     let x = $(this).siblings()
-    //     console.log(x)
-    //     for (i = 0; i < x.length; i++) {
-    //         console.log(x[3])
-    //         if (this === x[i]) {
-    //             console.log("yes")
-    //         }
-    //     }
-    // })
 })
+
+
+
+
+var num = [2, 4, 5, 23]
+
+var y = 5
+var z
+(function () {
+    let z = num.indexOf(y)
+    console.log(z)
+    for (i = 0; i < num.length; i++) {
+        console.log(num.indexOf(num[i]))
+        let w = num.indexOf(num[i])
+        if (z >= w) {
+            console.log("hello")
+        }
+        else {
+            console.log("Nei")
+        }
+
+    }
+})()
