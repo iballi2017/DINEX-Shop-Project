@@ -23,17 +23,17 @@ $(document).ready(() => {
     // $(".newsletter-form-input").on("focus", () => {
     //     $(".form-grp").css({ "border-bottom": "4px solid red", "transition": "border-bottom 250ms ease-in-out" });
     // })
-    $(".newsletter-form-input").focus(() => {
+    $(".newsletter-form-input").focus(function () {
         console.log("hello")
         $(".form-grp").css({ "border-bottom": "4px solid #858585", "transition": "border-bottom 250ms ease-in-out" });
     })
-    $(".newsletter-form-input").focusout(() => {
+    $(".newsletter-form-input").focusout(function () {
         console.log("hello")
         $(".form-grp").css({ "border-bottom": "1px solid #858585", "transition": "border-bottom 250ms ease-in-out" });
     })
 
 
-    $("#best-sellers").on('click', () => {
+    $("#best-sellers").on('click', function () {
         // alert("hello")
         $(".list-A").css({
             "transform": "scaleX(1)",
@@ -41,7 +41,7 @@ $(document).ready(() => {
         })
     })
 
-    $("#new-products").on('click', () => {
+    $("#new-products").on('click', function () {
         // alert("hello")
         $(".list-B").css({
             "transform": "scaleX(1)",
@@ -49,7 +49,7 @@ $(document).ready(() => {
         })
     })
 
-    $("#sale-products").on('click', () => {
+    $("#sale-products").on('click', function () {
         // alert("hello")
         $(".list-C").css({
             "transform": "scaleX(1)",
@@ -57,17 +57,17 @@ $(document).ready(() => {
         })
     })
 
-    $(".category-items").on('click', () => {
-        // alert("hello")
-        $(this).parent().css({
-            "background-color": "red"
-        })
-    })
 
-    $(".far").hover(() => {
-        // $(".far").removeClass("far").addClass("fas")
-        // $(this).toggleClass("far").toggleClass("fas")
-        // $(this).addClass("fas")
-        $(this).hide()
+    $(".fa-star").mouseover(function () {
+        // $(this).removeClass("far").addClass("fas")
+        console.log($(this).siblings())
+        let x = $(this).siblings()
+        console.log(x)
+        for (i = 0; i < x.length; i++) {
+            console.log(x[3])
+            if (this === x[i]) {
+                console.log("yes")
+            }
+        }
     })
 })
