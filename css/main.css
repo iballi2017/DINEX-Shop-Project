@@ -133,6 +133,7 @@ body {
 
 .hero {
   height: 90vh;
+  clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 100%);
   padding: 0 2em;
   background-color: var(--clr-shade);
   background-image: url('../images/freestocks-_3Q3tsJ01nc-unsplash.jpg');
@@ -141,7 +142,6 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position-x: left;
-
   color: var(--clr-tint2);
 }
 
