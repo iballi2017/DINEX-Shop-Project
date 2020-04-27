@@ -133,7 +133,8 @@ body {
 
 .hero {
   height: 90vh;
-  clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0%, 100% calc(100% - 10vw), 0% 100%);
+  margin-bottom: -10vw;
   padding: 0 2em;
   background-color: var(--clr-shade);
   background-image: url('../images/freestocks-_3Q3tsJ01nc-unsplash.jpg');
@@ -185,6 +186,7 @@ body {
 }
 
 .advert {
+  margin-top: 10vw;
   padding: 1em;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
