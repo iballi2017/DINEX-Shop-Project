@@ -126,11 +126,8 @@ body {
 .main-nav .nav-icon-list .badge-number {
   background: var(--clr-action);
   color: var(--clr-white);
-  width: 30px;
-  height: 30px;
-  border-radius: 30px;
+  border-radius: 20%;
   padding: 0.1em;
-  text-align: center;
   margin-left: -0.5em;
 }
 
