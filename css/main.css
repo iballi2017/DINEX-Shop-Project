@@ -261,6 +261,10 @@ body {
   justify-content: space-around;
 }
 
+.product-category-nav label {
+  cursor: pointer;
+}
+
 .product-category-nav label:after {
   content: '';
   display: block;
@@ -342,9 +346,10 @@ body {
 
 .column-2 {
   background: #524d4d;
-  background-image: url('../images/model-1.png');
+  background-image: url('../images/judeus-samson-0UECcInuCR4-unsplash.jpg');
   background-blend-mode: soft-light;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .column-1 p,
