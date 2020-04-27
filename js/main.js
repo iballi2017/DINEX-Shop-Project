@@ -33,4 +33,41 @@ $(document).ready(() => {
     })
 
 
+    $("#best-sellers").on('click', () => {
+        // alert("hello")
+        $(".list-A").css({
+            "transform": "scaleX(1)",
+            "position": "relative"
+        })
+    })
+
+    $("#new-products").on('click', () => {
+        // alert("hello")
+        $(".list-B").css({
+            "transform": "scaleX(1)",
+            "position": "relative"
+        })
+    })
+
+    $("#sale-products").on('click', () => {
+        // alert("hello")
+        $(".list-C").css({
+            "transform": "scaleX(1)",
+            "position": "relative"
+        })
+    })
+
+    $(".category-items").on('click', () => {
+        // alert("hello")
+        $(this).parent().css({
+            "background-color": "red"
+        })
+    })
+
+    $(".far").hover(() => {
+        // $(".far").removeClass("far").addClass("fas")
+        // $(this).toggleClass("far").toggleClass("fas")
+        // $(this).addClass("fas")
+        $(this).hide()
+    })
 })

@@ -35,7 +35,8 @@
           </li>
           <li class="nav-icon-list">
             <a href="#" class="icon-link">
-              <i class="fas fa-shopping-cart" style="color: red;"></i>
+              <i class="fas fa-shopping-cart"></i>
+              <span class="badge-number"><small>20</small></span>
             </a>
           </li>
         </ul>
@@ -114,7 +115,36 @@
         </div>
 
         <div class="products-category-list">
-          <div class="product-items-grid">
+          <form action="" class="product-category-nav">
+            <div class="">
+              <input
+                type="radio"
+                id="best-sellers"
+                name="product-category"
+                class="category-items"
+              />
+              <label for="best-sellers">Best Sellers</label>
+            </div>
+            <div class="">
+              <input
+                type="radio"
+                id="new-products"
+                name="product-category"
+                class="category-items"
+              />
+              <label for="new-products">New Products</label>
+            </div>
+            <div class="">
+              <input
+                type="radio"
+                id="sale-products"
+                name="product-category"
+                class="category-items"
+              />
+              <label for="sale-products">Sale Products</label>
+            </div>
+          </form>
+          <div class="list-A product-items-grid">
             <div class="product-card">
               <div class="img-wrapper">
                 <img src="./images/model-1.png" alt="" />
@@ -139,7 +169,7 @@
               <div class="item-stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
                 <i class="far fa-star"></i>
                 <i class="far fa-star"></i>
               </div>
@@ -157,7 +187,7 @@
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
-                <i class="far fa-star"></i>
+                <i class="fas fa-star"></i>
                 <i class="far fa-star"></i>
               </div>
               <a href="#">
@@ -189,8 +219,8 @@
               </div>
               <div class="item-stars">
                 <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
                 <i class="far fa-star"></i>
                 <i class="far fa-star"></i>
               </div>
@@ -220,7 +250,7 @@
         </div>
       </div>
 
-      <div class="contact-us">
+      <div class="wrapper contact-us">
         <div class="customer-service-and-company-address-column">
           <div class="content customer-service">
             <h3>Customer Service</h3>
@@ -265,18 +295,18 @@
       <div class="wrapper footer-inner">
         <ul class="hot-links">
           <li>
-            <a href="#">Returns Policy</a>
+            <a href="#"><small>Returns Policy</small></a>
           </li>
           <li>
-            <a href="#">Track Your Order</a>
+            <a href="#"><small>Track Your Order</small></a>
           </li>
           <li>
-            <a href="#">Shipping & Delivery</a>
+            <a href="#"><small>Shipping & Delivery</small></a>
           </li>
         </ul>
         <ul class="social-icons">
           <li>
-            <a href="#"><i class="fas fa-search"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
           </li>
           <li>
             <a href="#"><i class="fab fa-facebook"></i></a>
